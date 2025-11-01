@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrinceTube - Video Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"  href="b.png">
+  <!-- Meta Section -->
+  <meta name="description" content="Vidverse is a smart YouTube video explorer by Prince Mishra — search, watch, and explore trending videos instantly with a clean and responsive design.">
+  <meta name="keywords" content="Vidverse, YouTube video search, video explorer, video player, Prince Mishra, codewithprince, video website, GitHub pages">
+  <meta name="author" content="Prince Mishra">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Vidverse - Smart YouTube Video Explorer">
+  <meta property="og:description" content="Search and explore YouTube videos easily with Vidverse, made by Prince Mishra. Watch trending and popular content instantly.">
+  <meta property="og:image" content="https://codewithprince-07.github.io/Vidverse/logo.png">
+  <meta property="og:url" content="https://codewithprince-07.github.io/Vidverse/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="topbar">
+    <h1><i class="fa-brands fa-youtube"></i> Vidverse</h1>
+    <p>Search anything — songs, motivation, education, , etc.</p>
+    <marquee behavior="no-referrer" direction="right">Made with ❤️ by Prince Mishra</marquee>
+  </header>
+
+  <main class="container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search your favorite videos..." />
+      <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- Main Video Player -->
+    <section class="main-video hidden" id="mainVideoContainer">
+      <div class="player-wrapper">
+        <iframe id="mainVideoFrame" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h2 id="mainVideoTitle"></h2>
+        <button id="closeBtn">×</button>
+      </div>
+    </section>
+
+    <!-- Video Results -->
+    <section class="results-grid">
+      <h3>📺 Results</h3>
+      <div id="videoList" class="videos"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with ❤️ by <strong>Prince Mishra</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
